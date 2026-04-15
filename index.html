@@ -69,7 +69,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             padding: 20px;
         }
@@ -83,14 +83,11 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            transition: transform 0.3s ease;
         }
-
-        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
 
         .card-img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: contain;
             background: #000;
             padding: 10px;
@@ -98,9 +95,9 @@
 
         .card-content { padding: 20px; flex-grow: 1; }
 
-        .card-title { color: var(--accent); margin: 0 0 5px; font-size: 1.1rem; text-transform: uppercase; font-weight: bold; }
+        .card-title { color: var(--accent); margin: 0 0 5px; font-size: 1.1rem; text-transform: uppercase; }
 
-        .price { color: var(--accent-gold); font-weight: bold; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+        .price { color: var(--accent-gold); font-weight: bold; display: block; margin-bottom: 10px; }
 
         footer {
             text-align: center;
@@ -109,9 +106,6 @@
             font-size: 0.8rem;
             color: var(--text-dim);
         }
-
-        /* Fixed Image Display for Mobile */
-        img { max-width: 100%; height: auto; display: block; }
     </style>
 </head>
 <body>
@@ -135,7 +129,7 @@
             
             <a href="https://amzn.to/4svoFN7" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/81vL3-HnU9L._AC_SL1500_.jpg" class="card-img" alt="NC-C8 AI Field Unit">
+                    <img src="https://m.media-amazon.com/images/I/81vL3-HnU9L._AC_SL1500_.jpg" class="card-img" alt="NC-C8">
                     <div class="card-content">
                         <h3 class="card-title">NC-C8: AI FIELD UNIT</h3>
                         <span class="price">Acquisition: $369.99</span>
@@ -147,7 +141,7 @@
 
             <a href="https://amzn.to/4cbO4qn" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/61Nl-X3qJFL._AC_SL1500_.jpg" class="card-img" alt="NC-C10 PRO Industrial Console">
+                    <img src="https://m.media-amazon.com/images/I/61Nl-X3qJFL._AC_SL1500_.jpg" class="card-img" alt="NC-C10 PRO">
                     <div class="card-content">
                         <h3 class="card-title">NC-C10 PRO: INDUSTRIAL CONSOLE</h3>
                         <span class="price">Acquisition: ~$548.00</span>
@@ -159,7 +153,7 @@
 
             <a href="https://amzn.to/4mxCaud" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/71Y7+N+zJAL._AC_SL1500_.jpg" class="card-img" alt="NC-A1 Field Adaptor">
+                    <img src="https://m.media-amazon.com/images/I/71Y7+N+zJAL._AC_SL1500_.jpg" class="card-img" alt="NC-A1">
                     <div class="card-content">
                         <h3 class="card-title">NC-A1: FIELD ADAPTOR</h3>
                         <span class="price">Acquisition: ~$18.00</span>
@@ -171,7 +165,7 @@
 
             <a href="https://amzn.to/4mCTVIW" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/61fW8-J6H9L._AC_SL1500_.jpg" class="card-img" alt="NC-P1 Data Vault">
+                    <img src="https://m.media-amazon.com/images/I/61fW8-J6H9L._AC_SL1500_.jpg" class="card-img" alt="NC-P1">
                     <div class="card-content">
                         <h3 class="card-title">NC-P1: DATA VAULT</h3>
                         <span class="price">Acquisition: ~$99.00</span>
@@ -183,7 +177,7 @@
 
             <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600" class="card-img" alt="NBG Automation Core">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600" class="card-img" alt="Automation Core">
                     <div class="card-content">
                         <h3 class="card-title">NBG: AUTOMATION CORE</h3>
                         <span class="price">Access: Free Subscription</span>
