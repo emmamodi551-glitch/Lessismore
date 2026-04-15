@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LESS IS MORE</title>
+    <title>LESS IS MORE | OS</title>
     <style>
-        body { background-color: #0a0a0a; color: white; font-family: sans-serif; margin: 0; padding: 0; }
-        nav { background: #111; padding: 20px; text-align: center; border-bottom: 1px solid #333; }
-        nav a { color: #9b51e0; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.8rem; }
-        header { padding: 100px 20px 40px; text-align: center; }
-        h1 { letter-spacing: 5px; margin: 0; }
-        .accent { color: #9b51e0; font-weight: bold; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 0; line-height: 1.5; }
+        nav { padding: 20px; border-bottom: 1px solid #333; text-align: center; }
+        nav a { color: #9b51e0; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.7rem; letter-spacing: 1px; }
+        header { padding: 80px 20px 40px; text-align: center; }
+        h1 { font-size: 1.8rem; letter-spacing: 5px; margin: 0; border-bottom: 2px solid #9b51e0; display: inline-block; padding-bottom: 10px; }
+        .tagline { color: #9b51e0; margin-top: 15px; font-size: 0.9rem; font-weight: bold; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #161616; border: 1px solid #333; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
-        .card-img { width: 100%; height: 200px; object-fit: contain; background: #000; padding: 10px; }
-        .card-content { padding: 20px; }
-        .card-title { color: #9b51e0; margin: 0 0 10px; font-size: 1.1rem; }
-        .price { color: #d4af37; font-weight: bold; display: block; margin-bottom: 10px; }
-        .btn { color: #9b51e0; font-weight: bold; text-decoration: none; display: block; margin-top: 10px; border: 1px solid #9b51e0; padding: 10px; text-align: center; border-radius: 5px; }
-        footer { text-align: center; padding: 40px; color: #666; font-size: 0.8rem; border-top: 1px solid #333; margin-top: 40px; }
+        .card { background: #111; border: 1px solid #333; padding: 25px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { border-color: #9b51e0; }
+        .card-title { color: #9b51e0; margin: 0 0 10px; font-size: 1rem; text-transform: uppercase; }
+        .price { color: #d4af37; font-weight: bold; font-size: 0.8rem; margin-bottom: 15px; display: block; }
+        .desc { font-size: 0.85rem; color: #a0a0a0; margin-bottom: 20px; }
+        .btn { color: #0a0a0a; background-color: #9b51e0; text-decoration: none; padding: 12px; text-align: center; font-weight: bold; font-size: 0.75rem; border-radius: 2px; }
+        footer { text-align: center; padding: 60px 20px; color: #444; font-size: 0.7rem; border-top: 1px solid #222; margin-top: 40px; }
     </style>
 </head>
 <body>
@@ -31,70 +31,64 @@
 
     <header>
         <h1>LESS IS MORE</h1>
-        <p class="accent">LIFE IS SIMPLER NOW.</p>
-        <p>The Pilot's Operational System.</p>
+        <p class="tagline">SYSTEMS ARCHITECT: EMMANUEL</p>
+        <p style="font-size: 0.8rem; color: #666;">NUEL CORE: HUMAN OS [VER 1.0]</p>
     </header>
 
     <div class="container" id="hardware">
         <div class="grid">
             
             <div class="card">
-                <img src="https://m.media-amazon.com/images/I/81vL3-HnU9L._AC_SL1500_.jpg" class="card-img">
-                <div class="card-content">
+                <div>
                     <h3 class="card-title">NC-C8: AI FIELD UNIT</h3>
-                    <span class="price">$369.99</span>
-                    <p>Rugged 5G foundation for mobile Human OS operations.</p>
-                    <a href="https://amzn.to/4svoFN7" class="btn">ACQUIRE ON AMAZON</a>
+                    <span class="price">Acquisition: $369.99</span>
+                    <p class="desc">Rugged 5G foundation optimized for field operations and AI integration.</p>
                 </div>
+                <a href="https://amzn.to/4svoFN7" class="btn">VIEW SPECS</a>
             </div>
 
             <div class="card">
-                <img src="https://m.media-amazon.com/images/I/61Nl-X3qJFL._AC_SL1500_.jpg" class="card-img">
-                <div class="card-content">
+                <div>
                     <h3 class="card-title">NC-C10 PRO: CONSOLE</h3>
-                    <span class="price">~$548.00</span>
-                    <p>MIL-STD-810H | S-Pen. Enterprise-grade execution.</p>
-                    <a href="https://amzn.to/4cbO4qn" class="btn">ACQUIRE ON AMAZON</a>
+                    <span class="price">Acquisition: ~$548.00</span>
+                    <p class="desc">Enterprise-grade industrial console with S-Pen and MIL-STD durability.</p>
                 </div>
+                <a href="https://amzn.to/4cbO4qn" class="btn">VIEW SPECS</a>
             </div>
 
             <div class="card">
-                <img src="https://m.media-amazon.com/images/I/71Y7+N+zJAL._AC_SL1500_.jpg" class="card-img">
-                <div class="card-content">
+                <div>
                     <h3 class="card-title">NC-A1: FIELD ADAPTOR</h3>
-                    <span class="price">~$18.00</span>
-                    <p>Universal Rugged Strap. Hands-free ergonomics.</p>
-                    <a href="https://amzn.to/4mxCaud" class="btn">ACQUIRE ON AMAZON</a>
+                    <span class="price">Acquisition: ~$18.00</span>
+                    <p class="desc">Universal rugged strap system for hands-free mobile logistics.</p>
                 </div>
+                <a href="https://amzn.to/4mxCaud" class="btn">VIEW SPECS</a>
             </div>
 
             <div class="card">
-                <img src="https://m.media-amazon.com/images/I/61fW8-J6H9L._AC_SL1500_.jpg" class="card-img">
-                <div class="card-content">
+                <div>
                     <h3 class="card-title">NC-P1: DATA VAULT</h3>
-                    <span class="price">~$99.00</span>
-                    <p>1TB Rugged SSD. IP65 Rated encrypted storage.</p>
-                    <a href="https://amzn.to/4mCTVIW" class="btn">ACQUIRE ON AMAZON</a>
+                    <span class="price">Acquisition: ~$99.00</span>
+                    <p class="desc">1TB Rugged SSD. Encrypted storage for critical project backups.</p>
                 </div>
+                <a href="https://amzn.to/4mCTVIW" class="btn">VIEW SPECS</a>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600" class="card-img">
-                <div class="card-content">
+                <div>
                     <h3 class="card-title">NBG: AUTOMATION CORE</h3>
-                    <span class="price">FREE ACCESS</span>
-                    <p>Custom KWGT and MacroDroid packs for the Human OS.</p>
-                    <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" class="btn">SUBSCRIBE & DOWNLOAD</a>
+                    <span class="price">Access: FREE SUBSCRIPTION</span>
+                    <p class="desc">Unified logic interface. Custom KWGT and MacroDroid configuration packs.</p>
                 </div>
+                <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" class="btn">GET ACCESS</a>
             </div>
 
         </div>
     </div>
 
     <footer>
-        <p>SYSTEMS ARCHITECT: EMMANUEL | NUEL CORE: HUMAN OS</p>
+        <p>ALL SYSTEMS OPERATIONAL. 2026.</p>
         <p>As an Amazon Associate, I earn from qualifying purchases.</p>
-        <p>&copy; 2026. ALL SYSTEMS OPERATIONAL.</p>
     </footer>
 
 </body>
