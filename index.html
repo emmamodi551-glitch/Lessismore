@@ -1,63 +1,206 @@
-<div class="grid">
-    
-    <a href="https://amzn.to/4svoFN7" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/I/81vL3-HnU9L._AC_SL1500_.jpg" class="card-img" alt="HOTWAV R9 Ultra">
-            <div class="card-content">
-                <h3 class="card-title">NC-C8: AI FIELD UNIT</h3>
-                <span class="price">Acquisition: $369.99</span>
-                <p>20,080mAh | 24GB RAM | Android 15. Rugged 5G foundation for mobile Human OS operations.</p>
-                <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
-            </div>
-        </div>
-    </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESS IS MORE | Pilot's Operational System</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #161616;
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --accent: #9b51e0;
+            --accent-gold: #d4af37;
+        }
 
-    <a href="https://amzn.to/4cbO4qn" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/I/61Nl-X3qJFL._AC_SL1500_.jpg" class="card-img" alt="Samsung Galaxy Tab Active5 Pro">
-            <div class="card-content">
-                <h3 class="card-title">NC-C10 PRO: INDUSTRIAL CONSOLE</h3>
-                <span class="price">Acquisition: ~$548.00</span>
-                <p>MIL-STD-810H | 5G Unlocked | S-Pen. Enterprise-grade execution for professional pilots.</p>
-                <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
-            </div>
-        </div>
-    </a>
+        * { box-sizing: border-box; scroll-behavior: smooth; }
 
-    <a href="https://amzn.to/4mxCaud" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/I/71Y7+N+zJAL._AC_SL1500_.jpg" class="card-img" alt="Rugged Shoulder Strap">
-            <div class="card-content">
-                <h3 class="card-title">NC-A1: FIELD ADAPTOR</h3>
-                <span class="price">Acquisition: ~$18.00</span>
-                <p>Universal Rugged Shoulder Strap. Hands-free ergonomics for mobile logistics.</p>
-                <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
-            </div>
-        </div>
-    </a>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
 
-    <a href="https://amzn.to/4mCTVIW" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/I/61fW8-J6H9L._AC_SL1500_.jpg" class="card-img" alt="Samsung T7 Shield">
-            <div class="card-content">
-                <h3 class="card-title">NC-P1: DATA VAULT</h3>
-                <span class="price">Acquisition: ~$99.00</span>
-                <p>1TB Rugged SSD. IP65 Rated storage for digital assets and IT project backups.</p>
-                <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
-            </div>
-        </div>
-    </a>
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
 
-    <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600" class="card-img" alt="NBG Automation Core">
-            <div class="card-content">
-                <h3 class="card-title">NBG: AUTOMATION CORE</h3>
-                <span class="price">Access: Free Subscription</span>
-                <p>The Unified Interface. Custom KWGT and MacroDroid packs for the Human OS.</p>
-                <span style="color: var(--accent); font-weight: bold;">[ SUBSCRIBE & DOWNLOAD ]</span>
-            </div>
-        </div>
-    </a>
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
 
-</div>
+        header {
+            padding: 140px 20px 60px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 2.5rem; letter-spacing: 3px; margin: 0; text-transform: uppercase; }
+
+        .tagline { font-size: 1rem; color: var(--accent); margin: 10px 0; font-weight: bold; }
+
+        .container { width: 95%; max-width: 1200px; margin: 0 auto; padding: 40px 0; text-align: center; }
+
+        h2 {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            background: #000;
+            padding: 10px;
+        }
+
+        .card-content { padding: 20px; flex-grow: 1; }
+
+        .card-title { color: var(--accent); margin: 0 0 5px; font-size: 1.1rem; text-transform: uppercase; font-weight: bold; }
+
+        .price { color: var(--accent-gold); font-weight: bold; display: block; margin-bottom: 10px; font-size: 0.9rem; }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid #333;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        /* Fixed Image Display for Mobile */
+        img { max-width: 100%; height: auto; display: block; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#os">THE OS</a>
+        <a href="#hardware">HARDWARE</a>
+        <a href="#automation">AUTOMATION</a>
+        <a href="https://emmamodi551-glitch.github.io/digital-assets/">SERVICES</a>
+    </nav>
+
+    <header id="os">
+        <h1>LESS IS MORE</h1>
+        <div class="tagline">LIFE IS SIMPLER NOW.</div>
+        <p>The Pilot's Operational System. Disciplined, Unified, and Focused.</p>
+    </header>
+
+    <section class="container" id="hardware">
+        <h2>HARDWARE SOLUTIONS</h2>
+        <div class="grid">
+            
+            <a href="https://amzn.to/4svoFN7" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81vL3-HnU9L._AC_SL1500_.jpg" class="card-img" alt="NC-C8 AI Field Unit">
+                    <div class="card-content">
+                        <h3 class="card-title">NC-C8: AI FIELD UNIT</h3>
+                        <span class="price">Acquisition: $369.99</span>
+                        <p>20,080mAh | Android 15. Rugged 5G foundation for mobile operations.</p>
+                        <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://amzn.to/4cbO4qn" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61Nl-X3qJFL._AC_SL1500_.jpg" class="card-img" alt="NC-C10 PRO Industrial Console">
+                    <div class="card-content">
+                        <h3 class="card-title">NC-C10 PRO: INDUSTRIAL CONSOLE</h3>
+                        <span class="price">Acquisition: ~$548.00</span>
+                        <p>MIL-STD-810H | S-Pen | 5G Ready. Professional enterprise-grade execution.</p>
+                        <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://amzn.to/4mxCaud" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71Y7+N+zJAL._AC_SL1500_.jpg" class="card-img" alt="NC-A1 Field Adaptor">
+                    <div class="card-content">
+                        <h3 class="card-title">NC-A1: FIELD ADAPTOR</h3>
+                        <span class="price">Acquisition: ~$18.00</span>
+                        <p>Universal Rugged Shoulder Strap. Hands-free ergonomics for mobile pilots.</p>
+                        <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://amzn.to/4mCTVIW" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61fW8-J6H9L._AC_SL1500_.jpg" class="card-img" alt="NC-P1 Data Vault">
+                    <div class="card-content">
+                        <h3 class="card-title">NC-P1: DATA VAULT</h3>
+                        <span class="price">Acquisition: ~$99.00</span>
+                        <p>1TB Rugged SSD. IP65 Rated encrypted storage for digital project backups.</p>
+                        <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE ON AMAZON ]</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600" class="card-img" alt="NBG Automation Core">
+                    <div class="card-content">
+                        <h3 class="card-title">NBG: AUTOMATION CORE</h3>
+                        <span class="price">Access: Free Subscription</span>
+                        <p>The Unified Interface. Custom KWGT and MacroDroid packs for the Human OS.</p>
+                        <span style="color: var(--accent); font-weight: bold;">[ SUBSCRIBE & DOWNLOAD ]</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>SYSTEMS ARCHITECT: EMMANUEL | NUEL CORE: HUMAN OS</p>
+        <p style="margin: 10px 0;">As an Amazon Associate, I earn from qualifying purchases.</p>
+        <p>&copy; 2026. ALL SYSTEMS OPERATIONAL.</p>
+    </footer>
+
+</body>
+</html>
