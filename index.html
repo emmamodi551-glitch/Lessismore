@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LESS IS MORE | Pilot's Operational System</title>
     <style>
-        /* CSS VARIABLES - Easy to change colors here */
         :root {
             --bg-color: #0a0a0a;
             --card-bg: #161616;
             --text-main: #ffffff;
             --text-dim: #a0a0a0;
-            --accent: #9b51e0; /* Pilot Purple */
-            --accent-gold: #d4af37; /* NC-C10 Gold */
+            --accent: #9b51e0;
+            --accent-gold: #d4af37;
         }
 
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
 
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -28,7 +24,6 @@
             line-height: 1.6;
         }
 
-        /* NAVIGATION */
         nav {
             position: fixed;
             top: 0;
@@ -52,11 +47,8 @@
             transition: 0.3s;
         }
 
-        nav a:hover {
-            color: var(--accent);
-        }
+        nav a:hover { color: var(--accent); }
 
-        /* HERO SECTION */
         header {
             padding: 160px 20px 80px;
             text-align: center;
@@ -64,35 +56,15 @@
             margin: 0 auto;
         }
 
-        h1 {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            letter-spacing: 5px;
-            margin: 0;
-            text-transform: uppercase;
-        }
+        h1 { font-size: clamp(2.5rem, 8vw, 4rem); letter-spacing: 5px; margin: 0; text-transform: uppercase; }
 
-        .tagline {
-            font-size: 1.2rem;
-            color: var(--accent);
-            margin: 10px 0 30px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+        .tagline { font-size: 1.2rem; color: var(--accent); margin: 10px 0 30px; font-weight: bold; letter-spacing: 1px; }
 
-        .hero-desc {
-            color: var(--text-dim);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
+        .hero-desc { color: var(--text-dim); font-size: 1.1rem; max-width: 600px; margin: 0 auto 40px; }
 
-        /* GRID SYSTEM */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 0;
-        }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 60px 0; }
+
+        .section-center { text-align: center; }
 
         h2 {
             text-align: center;
@@ -104,27 +76,23 @@
             padding-bottom: 5px;
         }
 
-        .section-center { text-align: center; }
-
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        /* CARDS & GALLERY */
         .card {
             background: var(--card-bg);
             border: 1px solid #333;
             border-radius: 4px;
             overflow: hidden;
             transition: 0.4s;
+            height: 100%;
+            text-align: left;
         }
 
-        .card:hover {
-            border-color: var(--accent);
-            transform: translateY(-5px);
-        }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
 
         .card-img {
             width: 100%;
@@ -134,29 +102,14 @@
             transition: 0.5s;
         }
 
-        .card:hover .card-img {
-            filter: grayscale(0%);
-        }
+        .card:hover .card-img { filter: grayscale(0%); }
 
-        .card-content {
-            padding: 25px;
-        }
+        .card-content { padding: 25px; }
 
-        .card-title {
-            color: var(--accent);
-            margin: 0 0 10px;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-        }
+        .card-title { color: var(--accent); margin: 0 0 10px; font-size: 1.2rem; text-transform: uppercase; }
 
-        .price {
-            color: var(--accent-gold);
-            font-weight: bold;
-            display: block;
-            margin-bottom: 15px;
-        }
+        .price { color: var(--accent-gold); font-weight: bold; display: block; margin-bottom: 15px; }
 
-        /* BUTTONS */
         .btn {
             background: var(--accent);
             color: white;
@@ -167,11 +120,6 @@
             border-radius: 2px;
             margin-top: 20px;
             transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #7b39c0;
-            letter-spacing: 1px;
         }
 
         footer {
@@ -203,22 +151,26 @@
 
     <section class="container section-center" id="hardware">
         <h2>Hardware Solutions</h2>
+        
         <div class="grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1589561084283-930aa7b1ce50?auto=format&fit=crop&w=600" class="card-img" alt="NC-C8 Pro">
-                <div class="card-content">
-                    <h3 class="card-title">NC-C8 Pro System Kit</h3>
-                    <span class="price">Acquisition: $999.00</span>
-                    <p>High-performance rugged field unit with Pilot's Operational Manual integration.</p>
+            <a href="https://amzn.to/4svoFN7" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81vL3-HnU9L._AC_SL1500_.jpg" class="card-img" alt="HOTWAV R9 Ultra">
+                    <div class="card-content">
+                        <h3 class="card-title">NC-C8: AI FIELD UNIT</h3>
+                        <span class="price">Acquisition: $369.99</span>
+                        <p>20,080mAh Battery | 24GB RAM | Gemini AI. The essential foundation for the Human OS.</p>
+                        <span style="color: var(--accent); font-weight: bold;">[ ACQUIRE VIA AMAZON ]</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600" class="card-img" alt="NC-C10 Pro">
                 <div class="card-content">
                     <h3 class="card-title">NC-C10 Pro Console</h3>
                     <span class="price">Acquisition: $1,699.00</span>
-                    <p>Full Industrial Console. The future of Nuel On-Demand with tactile pilot controls.</p>
+                    <p>Full Industrial Console. Future-ready Nuel On-Demand with tactile pilot controls.</p>
                 </div>
             </div>
 
@@ -226,7 +178,7 @@
                 <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600" class="card-img" alt="Automation Hub">
                 <div class="card-content">
                     <h3 class="card-title">Automation Core</h3>
-                    <span class="price">Variable Affiliate Access</span>
+                    <span class="price">Affiliate Access</span>
                     <p>Master Flash flows for MacroDroid and Python. Zero overwhelm, maximum execution.</p>
                 </div>
             </div>
@@ -242,9 +194,9 @@
     <footer>
         <p>SYSTEMS ARCHITECT: EMMANUEL | NUEL CORE: HUMAN OS</p>
         <p>820 8th Ave S, St Cloud, MN 56301</p>
+        <p style="font-size: 0.7rem; color: #555; margin-top: 20px;">As an Amazon Associate, I earn from qualifying purchases.</p>
         <p>&copy; 2026. ALL SYSTEMS OPERATIONAL.</p>
     </footer>
 
 </body>
-                      </html>
-
+</html>
