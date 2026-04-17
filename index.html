@@ -13,12 +13,13 @@
         .tagline { color: #9b51e0; margin-top: 15px; font-size: 0.9rem; font-weight: bold; }
         .container { max-width: 900px; margin: 0 auto; padding: 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #111; border: 1px solid #333; padding: 25px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; }
+        .card { background: #111; border: 1px solid #333; padding: 25px; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; color: inherit; }
         .card:hover { border-color: #9b51e0; }
         .card-title { color: #9b51e0; margin: 0 0 10px; font-size: 1rem; text-transform: uppercase; }
         .price { color: #d4af37; font-weight: bold; font-size: 0.8rem; margin-bottom: 15px; display: block; }
         .desc { font-size: 0.85rem; color: #a0a0a0; margin-bottom: 20px; }
         .btn { color: #0a0a0a; background-color: #9b51e0; text-decoration: none; padding: 12px; text-align: center; font-weight: bold; font-size: 0.75rem; border-radius: 2px; }
+        .section-header { text-align: center; color: #9b51e0; letter-spacing: 3px; margin: 60px 0 30px; font-size: 1.2rem; text-transform: uppercase; border-top: 1px solid #222; pt-40px; padding-top: 40px; }
         footer { text-align: center; padding: 60px 20px; color: #444; font-size: 0.7rem; border-top: 1px solid #222; margin-top: 40px; }
     </style>
 </head>
@@ -26,6 +27,7 @@
 
     <nav>
         <a href="#hardware">HARDWARE</a>
+        <a href="#ecosystem">ECOSYSTEM</a>
         <a href="https://emmamodi551-glitch.github.io/digital-assets/">SERVICES</a>
     </nav>
 
@@ -71,7 +73,7 @@
                     <span class="price">Acquisition: ~$99.00</span>
                     <p class="desc">1TB Rugged SSD. Encrypted storage for critical project backups.</p>
                 </div>
-                <a href="https://amzn.to/4mCTVIW" class="btn">VIEW SPECS</a>
+                <a href="https://amzn.to/4mCTVIV" class="btn">VIEW SPECS</a>
             </div>
 
             <div class="card">
@@ -83,6 +85,24 @@
                 <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" class="btn">GET ACCESS</a>
             </div>
 
+        </div>
+    </div>
+
+    <div class="container" id="ecosystem">
+        <h2 class="section-header">Nuel Business Ecosystem</h2>
+        <div class="grid">
+            <a href="https://www.nuelpropertyservices.com" class="card">
+                <h3 class="card-title">Nuel Property Services</h3>
+                <p class="desc">Professional cleaning and maintenance solutions for home and office.</p>
+            </a>
+            <a href="https://digital.nuelpropertyservices.com" class="card">
+                <h3 class="card-title">Nuel Digital</h3>
+                <p class="desc">Innovative digital real estate and asset management platforms.</p>
+            </a>
+            <a href="https://slc.nuelpropertyservices.com" class="card">
+                <h3 class="card-title">Shared Leadership Circle</h3>
+                <p class="desc">Empowering communities through collective leadership and support.</p>
+            </a>
         </div>
     </div>
 
