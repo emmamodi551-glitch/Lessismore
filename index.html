@@ -19,7 +19,15 @@
         .price { color: #d4af37; font-weight: bold; font-size: 0.8rem; margin-bottom: 15px; display: block; }
         .desc { font-size: 0.85rem; color: #a0a0a0; margin-bottom: 20px; }
         .btn { color: #0a0a0a; background-color: #9b51e0; text-decoration: none; padding: 12px; text-align: center; font-weight: bold; font-size: 0.75rem; border-radius: 2px; }
-        .section-header { text-align: center; color: #9b51e0; letter-spacing: 3px; margin: 60px 0 30px; font-size: 1.2rem; text-transform: uppercase; border-top: 1px solid #222; pt-40px; padding-top: 40px; }
+        .section-header { text-align: center; color: #9b51e0; letter-spacing: 3px; margin: 60px 0 30px; font-size: 1.2rem; text-transform: uppercase; border-top: 1px solid #222; padding-top: 40px; }
+        
+        /* Gallery Styles */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 30px; }
+        .gallery-item { position: relative; overflow: hidden; border: 1px solid #333; border-radius: 4px; aspect-ratio: 1 / 1; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; filter: grayscale(50%); }
+        .gallery-item:hover img { transform: scale(1.1); filter: grayscale(0%); }
+        .gallery-item:hover { border-color: #9b51e0; }
+
         footer { text-align: center; padding: 60px 20px; color: #444; font-size: 0.7rem; border-top: 1px solid #222; margin-top: 40px; }
     </style>
 </head>
@@ -27,6 +35,7 @@
 
     <nav>
         <a href="#hardware">HARDWARE</a>
+        <a href="#gallery">GALLERY</a>
         <a href="#ecosystem">ECOSYSTEM</a>
         <a href="https://emmamodi551-glitch.github.io/digital-assets/">SERVICES</a>
     </nav>
@@ -39,7 +48,6 @@
 
     <div class="container" id="hardware">
         <div class="grid">
-            
             <div class="card">
                 <div>
                     <h3 class="card-title">NC-C8: AI FIELD UNIT</h3>
@@ -84,7 +92,16 @@
                 </div>
                 <a href="https://mailchi.mp/da4ea76666a4/httpsemmamodi551-glitchgithubiolessismore" class="btn">GET ACCESS</a>
             </div>
+        </div>
+    </div>
 
+    <div class="container" id="gallery">
+        <h2 class="section-header">System Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="1774944959811.png" alt="Nuel Core System"></div>
+            <div class="gallery-item"><img src="1774988281329.png" alt="NC-C10 PRO Dashboard"></div>
+            <div class="gallery-item"><img src="1775020345809.png" alt="Rugged C10 Pro Flyer"></div>
+            <div class="gallery-item"><img src="1775092690115.png" alt="Human OS Manual"></div>
         </div>
     </div>
 
